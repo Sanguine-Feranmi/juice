@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lib/bootstrap.css">
+    <link rel="stylesheet" href="Lib/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="Lib/jquery-3.6.3.min.js"></script>
+    <script src="Lib/jquery-3.6.3.js"></script>
+    <title>Fruit Stocks</title>
+</head>
+<body>
+    <div class="welcome">
+        <div class="head">
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="images/lemon-juice-summer-special-drink-lemon-cool-juice-recipe-main-photo.jpg" class=" thumbnail" alt=""> SanguineJuice</a>
+            </div>
+            <div class="side" id="side">
+                <ul class="side-ul"> 
+                    <li class="active"><a href="index.html">Home</a></li> 
+                    <li><a href="#Our-Menu" id="menu" >Our Menus</a></li> 
+                    <li><a href="#blog" >Blogs</a></li> 
+                    <li><a href="#" >Make Orders</a></li> 
+                    <li><a href="#" >Enquiries</a></li> 
+                    <li><a href="#" >Earn More</a></li> 
+                </ul>
+                <div class="form">
+                    <form action="index.html" role="form" >
+                        <div class="form-group">
+                            <input type="text" maxlength="20" placeholder="Input your Username" class="form-control user">
+                            <input type="password" placeholder="**********" maxlength="10" class="form-control pass">
+                            <center>
+                                <input type="submit" value="Sign In" class="btn btn-success sub">
+                            </center>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="menubar" id="menubar">
+                <div class="top bars"></div>
+                <div class="mid bars"></div>
+                <div class="bottom bars"></div>
+                <script>
+                    // let side = document.get
+                    $(document).ready(function(){
+                        $(".menubar").on("click", function(){
+                            $(".side").fadeToggle(500);
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="hero-sec container">
+            <center>
+                <div class="jumbotron getting">
+                    <h1>Getting Fruit Juice Made Easy</h1>
+                </div>
+                <div class="col-lg-12 all-intro">
+                    <p class="col-lg-9"> ...all varieties of Fruit Juice made available at <span>SanguineJuice</span> Stores...</p>
+                </div>
+
+                <div class="buttons">
+                    <a href="#"> <input type="button" class="btn shop" value="Shop Now"> </a>
+                    <a href="#"> <input type="button" class="btn shop anim" value=" > Order Now < "> </a>
+                </div>
+            </center>
+        </div>
+    </div>
+    <div class="landing container" id="Our-Menu">
+        <center>
+            <div class="landing-head col-lg-12">
+                <h1>Our Menu</h1>
+            </div>
+            <div class="search">
+                <input type="search" class="form-control search" id="searchbar" placeholder="Search for your favourites...">
+            </div>
+            <div class="menus col-lg-12">
+                <table class="table col-lg-12"> 
+                    <!-- <caption>Contextual Table Layout</caption>  -->
+                    <thead> 
+                        <tr> 
+                            <th>Products</th> 
+                            <th>Payment Date</th>
+                            <th>Status</th> 
+                            <th>Manage</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                        <tr class="warning"> 
+                            <td class="name" id="name">Lemon Juice</td> 
+                            <td>23/11/2013</td> 
+                            <td>In Stock</td>
+                            <td><input type="checkbox"></td> 
+                        </tr> 
+                        <tr class="success">
+                            <td class="name" id="name">Orange Juice</td> 
+                            <td>10/11/2013</td> 
+                            <td>Delivered</td> 
+                            <td><input type="checkbox"></td>
+                        </tr> 
+                        <tr class="warning"> 
+                            <td class="name" id="name">Mango Juice</td> 
+                            <td>20/10/2013</td> 
+                            <td>In Call to confirm</td>
+                            <td><input type="checkbox"></td> 
+                        </tr> 
+                        <tr class="danger"> 
+                            <td class="name"  id="name">Banana Juice</td> 
+                            <td>20/10/2013</td> 
+                            <td>In Stock</td>
+                            <td><input type="checkbox"></td> 
+                        </tr> 
+                        <tr class="danger"> 
+                            <td class="name"  id="name">Banana Juice</td> 
+                            <td>20/10/2013</td> 
+                            <td>In Stock</td>
+                            <td><input type="checkbox"></td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </div>
+        </center>
+    </div>
+    <div class="simp-menu container">
+        <center>
+            <div class="simp-sec-1">
+                <!-- <div class="overlay"></div> -->
+                <h1>Family Combos</h1>
+                <div class="family row">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/Fresh-Fruit-Juice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Fresh Fruit Juice Set <br>
+                            </h5>
+                            <p class="card-text">
+                                $1200
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/6a1-fruit-juice-1_1510168_20210315104426.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Fruit Juice Galore
+                            </h5>
+                            <p class="card-text">
+                                $2000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/gettyimages-475160032-2000-a1b5bcc38ca24cfc99d67f5efa05f1c6.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Fruit Juice Galore Pro
+                            </h5>
+                            <p class="card-text">
+                                $3800
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/nex-fruitjuice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Juice Redefined
+                            </h5>
+                            <p class="card-text">
+                                $1900
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simp-sec-1">
+                <!-- <div class="overlay"></div> -->
+                <h1>Official Packages</h1>
+                <div class="family row">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/juice-banner1-featured.jpeg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Colleague Blessings
+                            </h5>
+                            <p class="card-text">
+                                $1400
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/6a1-fruit-juice-1_1510168_20210315104426.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Vibrant Manger
+                            </h5>
+                            <p class="card-text">
+                                $3000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/Fresh-Fruit-Juice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Strengthy Waves
+                            </h5>
+                            <p class="card-text">
+                                $900
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/lemon-juice-summer-special-drink-lemon-cool-juice-recipe-main-photo.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Work on The Go
+                            </h5>
+                            <p class="card-text">
+                                $500
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simp-sec-1">
+                <!-- <div class="overlay"></div> -->
+                <h1>Picnic Packages</h1>
+                <div class="family row">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/gettyimages-475160032-2000-a1b5bcc38ca24cfc99d67f5efa05f1c6.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Blessed Day
+                            </h5>
+                            <p class="card-text">
+                                $6000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/Fresh-Fruit-Juice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Boot Pack
+                            </h5>
+                            <p class="card-text">
+                                $4000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/6a1-fruit-juice-1_1510168_20210315104426.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Refined for Her
+                            </h5>
+                            <p class="card-text">
+                                $1700
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/gettyimages-475160032-2000-a1b5bcc38ca24cfc99d67f5efa05f1c6.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                A Package for Him
+                            </h5>
+                            <p class="card-text">
+                                $1300
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="simp-sec-1">
+                <!-- <div class="overlay"></div> -->
+                <h1>Personal Consumption</h1>
+                <div class="family row">
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/Fresh-Fruit-Juice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Tranquil Moments
+                            </h5>
+                            <p class="card-text">
+                                $500
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/juice-banner1-featured.jpeg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Cloud 9
+                            </h5>
+                            <p class="card-text">
+                                $600
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/6a1-fruit-juice-1_1510168_20210315104426.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Trabaye Package
+                            </h5>
+                            <p class="card-text">
+                                $1000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <img src="images/Fresh-Fruit-Juice.jpg" alt="fresh fruit" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Connect to the Server
+                            </h5>
+                            <p class="card-text">
+                                $2000
+                            </p>
+                            <a href="#" class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+    <center>
+        <input type="button" value="See more >" id="see-more" class="btn btn-success see">
+        <input type="button" value="Close Menu" id="see-more" class="btn btn-danger close">
+    </center>
+    <script>
+        $(document).ready(()=>{
+            $(".see").click(()=>{
+                $(".simp-menu").slideDown(500);
+                $(".see").css("display", "none")
+                $(".close").css("display", "block")
+            })
+            $(".close").click(()=>{
+                $(".simp-menu").slideUp(500);
+                $(".see").css("display", "block")
+                $(".close").css("display", "none")
+            })
+        })
+    </script>
+    <div class="services container">
+        <div class="service-head">
+            <h1>Our Service</h1>
+        </div>
+        <div class="service-contents row">
+            <div class="service-img col-md-6">
+                <img src="../All JS prac/images/Juice-Download-PNG.png" alt="">
+            </div>
+            <div class="service-texts col-md-6 row">
+                <div class="cards col-md-6 col-sm-4">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1>Fast Delivery</h1>
+                        </div>
+                        <div class="card-text">
+                            <p>We are best in the Production and Delivery of all kinds of juice and Home-Made soft Drink.</p>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-md-6 col-sm-4">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1>Fast Delivery</h1>
+                        </div>
+                        <div class="card-text">
+                            <p>We are best in the Production and Delivery of all kinds of juice and Home-Made soft Drink.</p>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-md-6 col-sm-4">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1>Fast Delivery</h1>
+                        </div>
+                        <div class="card-text">
+                            <p>We are best in the Production and Delivery of all kinds of juice and Home-Made soft Drink.</p>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-md-6 col-sm-4">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h1>Fast Delivery</h1>
+                        </div>
+                        <div class="card-text">
+                            <p>We are best in the Production and Delivery of all kinds of juice and Home-Made soft Drink.</p>
+                            <a href="#" class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

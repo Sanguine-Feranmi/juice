@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+.welcome{
+    height: 100vh;
+    background: linear-gradient(rgba(11, 208, 142, 0.083), rgba(11, 208, 142, 0.749)), url("../images/nex-fruitjuice.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.welcome .head{
+    padding: 0;
+    background: rgba(0, 0, 0, 0.39);
+    padding: 10px 20px 0 20px;
+    box-shadow: 0 0 20px 5px rgba(156, 248, 134, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 10px 0;
+    animation: spin 15s linear infinite;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.head .side{
+    margin-top: 20px;
+}
+.head .side .form{
+    display: none;
+}
+.head .side .form form input{
+    margin: 10px 0;
+}
+.head .side .side-ul{
+    display: flex;
+}
+.head .side .side-ul li{
+    padding: 10px 15px;
+    transition: .5s;
+}
+.head .side .side-ul li:hover{
+    background: rgba(0, 128, 0, 0.535);
+    border-radius: 5px;
+}
+.head .side .side-ul li a{
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    color: rgb(197, 196, 196);
+    transform: .5s;
+    text-decoration: none;
+}
+.head .side .side-ul li a:hover{
+    border-radius: 5px;
+    color: white;
+}
+.head .menubar{
+    position: relative;
+    margin: 25px 0 0 0;
+    padding: 5px;
+    border-radius: 5px;
+    height: fit-content;
+    cursor: pointer;
+    display: none;
+}
+.head .menubar .bars{
+    border-radius: 10px;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin: 4px 0 4px 0 ;
+}
+@media screen and (max-width: 1100px) {
+    .welcome .head{
+        padding: 10px 20px 0 20px;
+        background: transparent;
+    }
+    .head .side{
+        display: none;
+        padding: 0 10px;
+        top: -20px;
+        right: 0px;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        background: rgba(11, 208, 142, 0.839);
+        box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.704);
+        z-index: 2;
+    }
+    .head .side .form{
+        display: block;
+    }
+    .head .side .side-ul{
+        display: block;
+        text-align: center;
+        margin-top: 200px;
+    }
+    .head .side .side-ul li{
+        margin: 20px;
+    }
+    .head .menubar{
+        position: fixed;
+        right: 20px;
+        display: block;
+        background: #000;
+        z-index: 2;
+    }
+    .head .side .side-ul li a{
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        transform: .5s;
+    }
+}
+/* hero section */
+.hero-sec{
+    margin-top: 190px;
+}
+.hero-sec .getting{
+    background: rgba(101, 97, 97, 0.505);
+    padding: 20px;
+    border-radius: 20px;
+}
+.hero-sec .getting h1{
+    font-family: cursive;
+    color: white;
+    text-shadow: 2px 3px 2px #000;
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-sec center .all-intro p{
+    margin-top: 50px;
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+}
+.hero-sec center .all-intro p span{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 5px rgb(0, 0, 0);
+    font-size: 20px;
+    
+}
+.hero-sec .buttons{
+    margin-top: 70px;
+}
+.hero-sec .buttons .shop{
+    /* background: ; */
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    transition: .5s;
+
+}
+.hero-sec .buttons .shop:hover{
+    background: rgba(0, 128, 0, 0.535);
+        font-weight: 700;
+}
+.hero-sec .buttons .anim{
+    animation: zoom 1s linear infinite;
+}
+@keyframes zoom{
+    0%{
+        font-size: 10px;
+        background: transparent;
+    }
+    50%{
+        font-size: 20px;
+        background: rgba(0, 128, 0, 0.535);
+        font-weight: 700;
+    }
+    100%{
+        font-size: 15px;
+    }
+}
+/* landing  */
+.landing{
+    margin: 90px auto 40px;
+}
+
+.simp-menu{
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    display: none;
+}
+.close{
+    display: none;
+}
+/* .simp-menu .simp-sec-1 .family img{
+    width: 100%;
+} */
+.simp-menu .simp-sec-1 h1,
+.landing .landing-head h1,
+.services .service-head h1{
+    font-family: cursive;
+}
+.simp-menu .family{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.simp-menu .card{
+   /* background: rgba(11, 208, 142, 0.749);*/
+   border: none;
+    margin: 15px 0;
+}
+.simp-menu .card .card-title,
+.simp-menu .card .card-text{
+    text-align: center;
+}
+/* service */
+.services{
+    margin: 40px auto;
+}
+.services .service-head h1
+{
+    width: fit-content;
+    margin: auto;
+}
+.services .service-img img{
+    width: 100%;
+    margin: auto;
+    animation: glow 10s forwards infinite;
+}
+@keyframes glow {
+  0%{
+   filter: drop-shadow(3px 3px 5px blue);
+    opacity: 100%;
+  }
+  50%{
+   filter: drop-shadow(3px 3px 5px #000);
+    opacity: 100%;
+  }
+  100%{
+   filter: drop-shadow(3px 3px 5px blue);
+    opacity: 100%; 
+  }
+}
+.our-service .service-texts{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+}
